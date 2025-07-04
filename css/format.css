@@ -1,0 +1,92 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif, Arial, Verdana;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.75rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+@media (max-width: 767px) {
+    /* Mobile styles */
+    .s1, .s2, .s3 {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Tablet styles */
+    .s1 {
+        width: calc(50% - 20px);
+    }
+    .s2 {
+        width: calc(50% - 20px);
+    }
+    .s3 {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (min-width: 992px) {
+    /* Desktop styles */
+    .s1, .s2, .s3 {
+        width: calc(33.33% - 20px);
+    }
+}
+
+.s1, .s2, .s3 {
+    float: left;
+    position: relative;
+    background-color: rgb(163, 162, 162);
+    padding: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.s1 h1, .s2 h1, .s3 h1 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    border: 1px solid black;
+    font-size: 1.25rem;
+}
+
+.s1 h1 {
+    background-color: salmon;
+}
+
+.s2 h1 {
+    background-color: #c14242;
+    color: white;
+}
+
+.s3 h1 {
+    background-color: lightgoldenrodyellow
+}
+
+.s1 p, .s2 p, .s3 p {
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+/* Container with padding for spacing */
+.container {
+    padding: 10px;
+}
+
